@@ -1205,8 +1205,8 @@ paths:
           
         you can search using various combinations of:
         
-          * `Primary-Organisation` - known within the ORD products as the Source Organisation
-          * `Participating-Organisation` - known within the ORD products as the Target Organisation
+          * `Primary-Organization` - known within the ORD products as the Source Organisation
+          * `Participating-Organization` - known within the ORD products as the Target Organisation
           * relationship status 
           
         It is also possible to return the relevant Organization Resources in these searches using the `_include` parameter.
@@ -1222,17 +1222,17 @@ paths:
         - in: query
           name: _id
           description: |
-            The organisation's ID - also known as its ODS code. If you already know the ODS code, consider using the 'Get organsiation details' endpoint instead.
+            The organisation's ID - also known as its ODS code. If you already know the ODS code, consider using the 'Get organisation details' endpoint instead.
           required: false
           schema:
             type: string
             example: 'RTG'
         - in: query
-          name: primary-organisation
+          name: primary-organization
           description: |
             The ‘source’ organisation which has a relationship. 
 
-            referred to as the SourceOrganisation in the ORD schema 
+            referred to as the SourceOrganization in the ORD schema 
 
             Must be a valid Organisation code with relationships to return results
           required: false
